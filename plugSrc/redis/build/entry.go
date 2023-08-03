@@ -71,7 +71,7 @@ func (red Redis) ResolveStream(net, transport gopacket.Flow, r io.Reader) {
 			}
 			cmd += " " + string(c)
 		}
-		fmt.Println(fmt.Print(time.Now().Format("2006-01-02 15:04:05")),net,cmd)
+		fmt.Println(time.Now().Format("2006-01-02 15:04:05"),net,cmd)
 	}
 }
 
