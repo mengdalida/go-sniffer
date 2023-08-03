@@ -5,6 +5,7 @@ import (
 	"io"
 	"strings"
 	"fmt"
+	"time"
 	"strconv"
 	"bufio"
 )
@@ -70,7 +71,7 @@ func (red Redis) ResolveStream(net, transport gopacket.Flow, r io.Reader) {
 			}
 			cmd += " " + string(c)
 		}
-		fmt.Println(cmd)
+		fmt.Println(fmt.Print(time.Now().Format("2006-01-02 15:04:05")),net,cmd)
 	}
 }
 
