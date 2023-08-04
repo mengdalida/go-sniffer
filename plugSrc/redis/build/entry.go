@@ -3,7 +3,7 @@ package build
 import (
 	"github.com/google/gopacket"
 	"io"
-	// "strings"
+	"strings"
 	"fmt"
 	"time"
 	"strconv"
@@ -50,10 +50,10 @@ func (red Redis) ResolveStream(net, transport gopacket.Flow, r io.Reader) {
 			}
 		}
 
-		//Filtering useless data
-		// if !strings.HasPrefix(string(line), "*") {
-		// 	continue
-		// }
+		Filtering useless data
+		if !strings.HasPrefix(string(line), "*") {
+			continue
+		}
 
 		//Do not display
 		// if strings.EqualFold(transport.Src().String(), strconv.Itoa(red.port)) == true {
