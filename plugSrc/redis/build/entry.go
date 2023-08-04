@@ -50,7 +50,7 @@ func (red Redis) ResolveStream(net, transport gopacket.Flow, r io.Reader) {
 			}
 		}
 
-		Filtering useless data
+		// Filtering useless data
 		if !strings.HasPrefix(string(line), "*") {
 			continue
 		}
