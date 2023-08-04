@@ -56,9 +56,9 @@ func (red Redis) ResolveStream(net, transport gopacket.Flow, r io.Reader) {
 		}
 
 		//Do not display
-		if strings.EqualFold(transport.Src().String(), strconv.Itoa(red.port)) == true {
-			continue
-		}
+		// if strings.EqualFold(transport.Src().String(), strconv.Itoa(red.port)) == true {
+		// 	continue
+		// }
 
 		//run
 		l := string(line[1])
