@@ -3,7 +3,7 @@ package build
 import (
 	"github.com/google/gopacket"
 	"io"
-	"strings"
+	// "strings"
 	"fmt"
 	"time"
 	"strconv"
